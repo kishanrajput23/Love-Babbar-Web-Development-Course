@@ -1,0 +1,36 @@
+/* Element Selector */
+h1 {
+    font-size: 50;
+    background-color: yellow;
+    text-align: center;
+}
+
+p {
+    color: blueviolet;
+}
+
+article {
+    color:darkgreen;
+}
+
+/* ID Selector */
+#para1 {
+    background-color: aqua;
+}
+
+/* Class Selector */
+.center {
+    text-align: center;
+}
+
+/* Universal Selector */
+
+* {
+    font-size: 20px;
+}
+
+/* Grouping Selector */
+h3, h4, h5 {
+    color: darkslateblue;
+    background-color: bisque;
+}

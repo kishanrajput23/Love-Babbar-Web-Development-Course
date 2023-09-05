@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --primary-color: yellow;
+            --custom-width: 400px;
+        }
+        
+        .container {
+            background-color: beige;
+            border: solid red 2px;
+            margin: 2px;
+            padding: 2px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: var(--primary-color);
+            border: solid black 2px;
+            margin: 2px;
+            padding: 2px;
+            width: var(--custom-width);
+            text-align: center;
+            box-shadow: 5px 10px black;
+        }
+
+        #example1 {
+            background-color: aquamarine;
+            border: solid green 2px;
+            margin: 10px;
+            padding: 2px;
+            box-shadow: 5px 10px 5px chartreuse ;
+        }
+
+        #example2 {
+            background-color: pink;
+            border: solid green 2px;
+            margin: 30px;
+            padding: 2px;
+            box-shadow: 5px 10px 5px 10px blue ;
+        }
+
+        #example3 {
+            background-color: white;
+            border: solid red 2px;
+            margin: 30px;
+            padding: 2px;
+            box-shadow: 5px 10px 10px pink inset;
+        }
+
+        #example4 {
+            background-color: white;
+            border: solid black 2px;
+            margin: 30px;
+            padding: 2px;
+            box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+        }
+
+        #ex1 {
+            text-shadow: 2px 2px red;
+        }
+
+        #ex2 {
+            text-shadow: 2px 2px 8px red;
+        }
+
+        #ex3 {
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        #ex4 {
+            text-shadow: 0 0 3px #FF0000;
+        }
+
+        #ex5 {
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>HELLO WORLD!!!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis praesentium vero voluptates quos facere cum.</p>
+        </div>
+    </div>
+
+    <div id="example1">
+        <p>A chartreuse shadow with blur radius.</p>
+    </div>
+
+    <div id="example2">
+        <p>A blue shadow with spread-radius radius.</p>
+    </div>
+
+    <div id="example3">
+        <p>A pink shadow with inset</p>
+    </div>
+
+    <div id="example4">
+        <p>Multiple shadows</p>
+      </div>
+
+      <h2 id="ex1">The Text Shadow Property</h2>
+
+      <h2 id="ex2">The Text Shadow Property With Blur Effect</h2>
+
+      <h2 id="ex3">Text-shadow on white text</h2>
+
+      <h2 id="ex4">Text-shadow with red neon glow</h2>
+
+      <h2 id="ex5">Text-shadow with red and blue neon glow</h2>
+</body>
+</html>

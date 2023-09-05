@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            border: solid black 3px;
+        }
+
+        @media (min-width:500px) {
+            .box {
+                background-color : green;
+            }
+        }
+
+        .square {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border: solid black 3px;
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            .square {
+                background-color : pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Ram Ram Bhai Sarene
+    </div>
+
+    <br>
+
+    <div class="square">
+        Hello ji
+    </div>
+</body>
+</html> 

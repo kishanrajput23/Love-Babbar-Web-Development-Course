@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(102, 109, 238) 0%, rgba(236, 55, 121, 0.92) 100%);
+} 
+
+.conatiner {
+    width: 90%;
+    max-width: 450px; 
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.display-container {
+    position: relative;
+    background-color: rgb(123, 255, 0);
+    border-radius: 10px; 
+    border-bottom: 0.35rem solid yellow;
+    margin: 1rem 0; 
+    padding-top: 0.35rem;
+}
+
+.display { 
+    width: 100%;
+    color: rgb(255, 3, 255);
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 30px;
+    border: none;
+}
+
+.display::placeholder {
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+    top: 45%;
+    left: 1rem;
+    line-height: 30px;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+}
+
+.display-container button {
+    position: absolute;
+    top: 50%;
+    right: 1.8rem;
+    transform: translateY(-50%);
+}
+
+/* .copyBtn {
+    background: transparent;
+    border: none;
+    outline: none;
+} */
+
+.toolTip {
+    position: absolute;
+    background-color: rgb(250, 72, 101);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+    top: -34px;
+}
+
+.toolTip.active {
+    opacity: 1;
+    transform: scale(1);
+}
+ 
+.input-container {
+    width: 100%;
+    background-color: rgb(25, 231, 14);
+    border-radius: 10px;
+    padding: 1rem 1.3rem;
+    border-bottom: 0.35rem solid yellow;
+}
+
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.length-container p:nth-child(1) {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.length-container p:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strength-container p:nth-child(1) {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.indicator {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+
+}
+
+.generateButton {
+    background-color: rgb(220, 249, 0);
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 0.20rem solid rgb(246, 8, 47);
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin: 0.2rem;
+    gap: 0 0.4rem;
+}
+
+.check input {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    border-radius: 3px;
+}
+
+.check input:checked {
+    background-color: aqua;
+}
+
+.check input:checked::before {
+    content: '\2713';
+    position: absolute;
+    font-weight: 500;
+    left: 15%
+}
+
+.check label {
+    font-weight: 500;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 0.80rem;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(240, 38, 12), rgba(0, 0, 255, 0.831))
+}
+
+.slider::-webkit-slider-thumb {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+    background-color: yellow;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    box-shadow: 0px 0px 20px 0px rgba(236, 55, 121, 0.92);
+}
+
+.slider:focus {
+    outline: 2px solid yellow;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: red;
+    border: 1px solid yellow;
+}
